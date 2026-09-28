@@ -1,0 +1,23 @@
+/* #region Header */
+body {
+    font-family: "Merriweather", sans-serif;
+}
+
+.header {
+    font-size: 0.75rem;
+    padding-block: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.header__button {
+    position: absolute;
+    right: 0;
+    padding-right: 19px;
+    height: 1.3rem;
+}
+
+
+/* #endregion Header */
