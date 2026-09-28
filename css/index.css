@@ -1,9 +1,18 @@
-/* #region Header */
+:root {
+    --main-text-color: #110E47;
+    --button-color: #AAA9B1;
+    --rating-text: #9C9C9C;
+}
+
+
 body {
     font-family: "Merriweather", sans-serif;
 }
 
+/* #region Header */
+
 .header {
+    color: var(--main-text-color);
     font-size: 0.75rem;
     padding-block: 2rem;
     display: flex;
@@ -21,3 +30,58 @@ body {
 
 
 /* #endregion Header */
+
+/* #region now showing */
+
+.NS__section {
+    margin-inline-start: 1rem;
+}
+
+.NS__header {
+    padding-inline-end: 1rem;
+    padding-block-end: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NS__header h2 {
+    color: var(--main-text-color);
+}
+
+.NS__seemore {
+    padding-inline: 0.75rem;
+    padding-block: 0.25rem;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 1rem;
+    font-weight: lighter;
+}
+
+.NS__list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.NS__list__item {
+    font-family: "Mulish", sans-serif;
+    width: 12rem;
+    flex-shrink: 0;
+}
+
+.NS__item__figure {
+
+}
+
+.NS__item__poster {
+    min-width: 12rem;
+    min-height: 18rem;
+    object-fit: fill;
+    border-radius: 0.5rem;
+}
+
+.rating {
+    color: var(--rating-text);
+    display: flex;
+}
