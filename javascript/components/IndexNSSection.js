@@ -5,7 +5,7 @@ export default function NowShowing (NowShowingData) {
     sectionElement.innerHTML = `
     <header class="NS__header">
         <h2>Now Showing</h2>
-        <a class="NS__seemore" href="#">See more</a>
+        <a class="seemore__button" href="#">See more</a>
     </header>
     <ul class="NS__list">
         ${NowShowingData.results.map(function (movie) {
