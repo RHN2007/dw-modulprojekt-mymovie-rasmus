@@ -2,8 +2,47 @@
     --main-text-color: #110E47;
     --button-color: #AAA9B1;
     --rating-text: #9C9C9C;
+
+    --genre-background: #DBE3FF;
+    --genre-text: #88A4E8;
 }
 
+
+.seemore__button {
+    padding-inline: 0.75rem;
+    padding-block: 0.25rem;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 1rem;
+    font-weight: lighter;
+}
+
+.genre__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.genre {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--genre-background);
+    color: var(--genre-text);
+}
+
+.rating {
+    color: var(--rating-text);
+    display: flex;
+    gap: 0.3rem;
+}
+
+.rating img {
+    width: 1rem;
+}
 
 body {
     font-family: "Merriweather", sans-serif;
@@ -49,15 +88,6 @@ body {
     color: var(--main-text-color);
 }
 
-.NS__seemore {
-    padding-inline: 0.75rem;
-    padding-block: 0.25rem;
-    color: var(--button-color);
-    border: 1px solid var(--button-color);
-    border-radius: 1rem;
-    font-weight: lighter;
-}
-
 .NS__list {
     display: flex;
     overflow-x: auto;
@@ -81,7 +111,62 @@ body {
     border-radius: 0.5rem;
 }
 
-.rating {
-    color: var(--rating-text);
+
+/* #endregion Now Showing */
+
+/* #region Popular */
+
+.popular__list__item a {
     display: flex;
 }
+
+.popular__section {
+    padding-inline: 1rem;
+}
+
+.popular__header {
+    padding-block-end: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular__header h4 {
+    font-size: 1.5rem;
+    color: var(--main-text-color);
+}
+
+.popular__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.popular__list__item a {
+    font-family: "Mulish", sans-serif;
+    display: flex;
+    gap: 1rem;
+}
+
+.popular__item__poster {
+    max-width: 9rem;
+    max-height: 18rem;
+    object-fit: fill;
+    border-radius: 0.5rem;
+}
+
+.popular__movie__div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.popular__title {
+    font-size: 1rem;
+    max-width: 10rem;
+}
+
+.popular__rating {
+    
+}
+
