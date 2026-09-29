@@ -3,6 +3,7 @@ import NowShowing from "./components/IndexNSSection.js"
 import fetchData from "./Functionality/Fetch.js"
 import Popular from "./components/IndexPopularSection.js"
 import Navigation from "./components/IndexNavigation.js"
+import Darkmode from "./Functionality/Darkmode.js"
 
 let NowShowingData = await fetchData("3/movie/now_playing")
 let PopularData = await fetchData("3/movie/popular")
@@ -30,14 +31,7 @@ function render () {
 async function init () {
     render()
 
-    const darkModeSwitch = document.querySelector(".checkbox")
-    darkModeSwitch.addEventListener("change", () => {
-    if (darkModeSwitch.checked) {
-        document.documentElement.style.colorScheme = "dark"
-    } else {
-        document.documentElement.style.colorScheme = "light"
-    }
-    })
+    Darkmode()
 }
 
 init()
