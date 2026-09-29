@@ -13,7 +13,7 @@ export default function NowShowing (NowShowingData) {
             <li class="NS__list__item">
                 <a href="#">
                 <figure class="NS__item__figure">
-                    <img class="NS__item__poster" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="${movie.title}">
+                    <img loading="lazy" class="NS__item__poster" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="${movie.title}">
                 </figure>
                 <h3>${movie.title}</h3>
                 <div class="rating">

@@ -17,7 +17,7 @@ export default function Popular (PopularData) {
             <li class="popular__list__item">
                 <a href="#">
                 <figure class="popular__item__figure">
-                    <img class="popular__item__poster" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="${movie.title}">
+                    <img loading="lazy" class="popular__item__poster" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="${movie.title}">
                 </figure>
                 <div class="popular__movie__div">
                     <h5 class="popular__title">${movie.title}</h5>
