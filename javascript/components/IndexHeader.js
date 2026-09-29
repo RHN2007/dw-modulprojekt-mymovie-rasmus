@@ -4,9 +4,10 @@ export default function Header () {
 
     headerElement.innerHTML = `
     <h1 class="header__text">MyMovies</h1>
-    <button class="header__button">
-        <img src="../../icons/dark mode switch.svg" alt="darkmode switch">
-    </button>
+        <label class="header__button">
+        <input class="checkbox" type="checkbox">
+        <span class="slider round"></span>
+    </label>
     `
 
     return headerElement
