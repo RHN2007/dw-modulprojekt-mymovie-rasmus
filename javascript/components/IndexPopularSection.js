@@ -15,7 +15,7 @@ export default function Popular (PopularData) {
         ${PopularData.results.map(function (movie) {
             return `
             <li class="popular__list__item">
-                <a href="detail.html?id=${movie.id}">
+                <a href="details.html?id=${movie.id}">
                 <figure class="popular__item__figure">
                     <img loading="lazy" class="popular__item__poster" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="${movie.title}">
                 </figure>
