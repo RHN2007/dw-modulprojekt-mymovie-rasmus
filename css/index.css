@@ -1,15 +1,4 @@
-:root {
-    --background-color: light-dark(#FFFFFF, #000000);
-    --main-text-color: light-dark(#110E47, #DBE3FF);
-    --secondary-text-color: light-dark(#000000, #F0EFFA);
-    --button-color: light-dark(#AAA9B1, #E5E4EA);
-    --rating-text: #9C9C9C;
-
-    --darkmode-circle: light-dark(#ffffff, #000000); 
-
-    --genre-background: #DBE3FF;
-    --genre-text: #88A4E8;
-}
+@import url(shared.css);
 
 
 .seemore__button {
@@ -19,23 +8,6 @@
     border: 1px solid var(--button-color);
     border-radius: 1rem;
     font-weight: lighter;
-}
-
-.genre__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.genre {
-    font-size: 0.75rem;
-    font-weight: bold;
-    padding-inline: 1.5rem;
-    padding-block: 0.5rem;
-    border-radius: 1rem;
-    background-color: var(--genre-background);
-    color: var(--genre-text);
 }
 
 .rating {
@@ -64,54 +36,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center
-}
-
-.header__button { /* jeg elsker w3 schools https://www.w3schools.com/howto/howto_css_switch.asp */
-    position: absolute;
-    right: 0;
-    width: 60px;
-    height: 2rem;
-    margin-right: 1rem;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    inset: 0;
-    background-color: #AAA9B1;
-    transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.65rem;
-  width: 1.65rem;
-  left: 0.2rem;
-  bottom: 0.2rem;
-  background-color: var(--darkmode-circle);
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #FFFFFF;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #FFFFFF;
-}
-
-input:checked + .slider:before {
-  transform: translateX(1.65rem);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
 
 
@@ -223,9 +147,9 @@ input:checked + .slider:before {
 .nav__wrapper{
     border-top: 1px solid var(--main-text-color);
     background-color: var(--background-color);
-    position: fixed; /* Set the navbar to fixed position */
-    bottom: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .navigation__list {

@@ -1,0 +1,24 @@
+@import url(shared.css);
+
+body {
+    background-color: var(--background-color);
+}
+
+
+.header {
+    width: 100%;
+    height: 20rem;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 2rem;
+}
