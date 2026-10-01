@@ -3,10 +3,12 @@ import SearchParams from "./Functionality/SearchParam.js"
 import Darkmode from "./Functionality/Darkmode.js"
 import Header from "./components/DetailsHeader.js"
 import InfoSection from "./components/DetailsInfoSection.js"
+import Description from "./components/DetailsDescriptionSection.js"
 
 const movieID = SearchParams("id")
 let movieData = await fetchData("3/movie/" + movieID)
 let movieReleaseDates = await fetchData("3/movie/" + movieID + "/release_dates")
+let movieCredits = await fetchData("3/movie/" + movieID + "/credits")
 
 
 let result = movieReleaseDates.results.find(data => { // Gå igennem vores movieReleaseDates og se om dens iso_3166_1 er DK (da vi vil gerne vise danske age ratings)
@@ -33,6 +35,7 @@ function render () {
     mainElement.classList.add("main")
 
     mainElement.append(InfoSection(movieData, movieRating))
+    mainElement.append(Description(movieData))
 
     rootElement.append(mainElement)
 
