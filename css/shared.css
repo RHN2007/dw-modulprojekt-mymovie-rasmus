@@ -19,7 +19,7 @@
 }
 
 .genre {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: bold;
     padding-inline: 1.5rem;
     padding-block: 0.5rem;
@@ -36,6 +36,15 @@
 
 .rating img {
     width: 1rem;
+}
+
+.seemore__button {
+    padding-inline: 0.75rem;
+    padding-block: 0.25rem;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 1rem;
+    font-weight: lighter;
 }
 
 .header__button { /* jeg elsker w3 schools https://www.w3schools.com/howto/howto_css_switch.asp */

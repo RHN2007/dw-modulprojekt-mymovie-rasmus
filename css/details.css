@@ -2,6 +2,17 @@
 
 body {
     background-color: var(--background-color);
+    height: 100vh;
+    font-family: "Mulish", sans-serif;
+}
+
+.main {
+    position: absolute;
+    top: 19rem;
+    background-color: var(--background-color);
+    width: 100% ;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 
@@ -18,7 +29,34 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
     padding: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.info__top__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.info__top h1 {
+    max-width: 15rem;
+    font-size: 1.5rem;
+    color: var(--secondary-text-color);
+}
+
+.info__top {
+    justify-content: space-between;
+    display: flex;
+}
+
+.movie__info__list {
+    display: flex;
+    justify-content: space-between;
 }
