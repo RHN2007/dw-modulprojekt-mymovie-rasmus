@@ -39,7 +39,7 @@ export default function InfoSection(movieData, movieRating) {
         </li>
         <li class="movie__info__list__item">
             <p>Language</p>
-            <p>${movieData.spoken_languages[0].name}</p>
+            <p>${movieData.spoken_languages[0].english_name}</p>
         </li>
         <li class="movie__info__list__item">
             <p>Rating</p>

@@ -60,3 +60,11 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.movie__info__list__item {
+    color: var(--secondary-text-color);
+}
+
+.movie__info__list__item p:first-of-type {
+    color: var(--rating-text);
+}
