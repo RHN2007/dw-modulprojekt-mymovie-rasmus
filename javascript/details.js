@@ -4,11 +4,14 @@ import Darkmode from "./Functionality/Darkmode.js"
 import Header from "./components/DetailsHeader.js"
 import InfoSection from "./components/DetailsInfoSection.js"
 import Description from "./components/DetailsDescriptionSection.js"
+import CastSection from "./components/DetailsCastSection.js"
+
 
 const movieID = SearchParams("id")
 let movieData = await fetchData("3/movie/" + movieID)
 let movieReleaseDates = await fetchData("3/movie/" + movieID + "/release_dates")
-let movieCredits = await fetchData("3/movie/" + movieID + "/credits")
+let movieCredits = await fetchData("3/movie/" + movieID + "/credits?language=en-US")
+console.log(movieCredits)
 
 
 let result = movieReleaseDates.results.find(data => { // Gå igennem vores movieReleaseDates og se om dens iso_3166_1 er DK (da vi vil gerne vise danske age ratings)
@@ -36,6 +39,7 @@ function render () {
 
     mainElement.append(InfoSection(movieData, movieRating))
     mainElement.append(Description(movieData))
+    mainElement.append(CastSection(movieCredits))
 
     rootElement.append(mainElement)
 

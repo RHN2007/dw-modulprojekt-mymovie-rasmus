@@ -125,7 +125,6 @@ body {
 /* #region Navigation */
 
 .nav__wrapper{
-    border-top: 1px solid var(--main-text-color);
     background-color: var(--background-color);
     position: fixed;
     bottom: 0;
@@ -138,4 +137,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+/* #endregion Navigation */
 

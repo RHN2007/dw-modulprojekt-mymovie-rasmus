@@ -4,8 +4,8 @@ export default function Description (movieData) {
 
 
     sectionElement.innerHTML = `
-    <h2>Description</h2>
-    <p>${movieData.overview}</p>
+    <h2 class="description__heading">Description</h2>
+    <p class="movie__description">${movieData.overview}</p>
     `
     return sectionElement
 }
