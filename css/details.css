@@ -118,5 +118,6 @@ body {
 }
 
 .cast__name {
+    color: var(--main-text-color);
     font-size: 0.75rem;
 }

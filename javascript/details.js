@@ -11,7 +11,8 @@ const movieID = SearchParams("id")
 let movieData = await fetchData("3/movie/" + movieID)
 let movieReleaseDates = await fetchData("3/movie/" + movieID + "/release_dates")
 let movieCredits = await fetchData("3/movie/" + movieID + "/credits?language=en-US")
-console.log(movieCredits)
+
+document.title = movieData.title // skift sidens title til at være filmens navn
 
 
 let result = movieReleaseDates.results.find(data => { // Gå igennem vores movieReleaseDates og se om dens iso_3166_1 er DK (da vi vil gerne vise danske age ratings)
